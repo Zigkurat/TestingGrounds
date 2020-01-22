@@ -10594,16 +10594,13 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Applications/UE_4.24/Engine/Source/Runtime/XmlParser/Private/XmlFile.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Applications/UE_4.24/Engine/Source/Runtime/XmlParser/Private/XmlFile.cpp.o"
   "/Applications/UE_4.24/Engine/Source/Runtime/XmlParser/Private/XmlNode.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Applications/UE_4.24/Engine/Source/Runtime/XmlParser/Private/XmlNode.cpp.o"
   "/Applications/UE_4.24/Engine/Source/Runtime/XmlParser/Private/XmlParser.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Applications/UE_4.24/Engine/Source/Runtime/XmlParser/Private/XmlParser.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/Private/ChooseNextWaypoint.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/Private/ChooseNextWaypoint.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/Private/PatrolRoute.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/Private/PatrolRoute.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/Private/PatrollingGuard.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/Private/PatrollingGuard.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TP_ThirdPerson/TP_ThirdPersonCharacter.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TP_ThirdPerson/TP_ThirdPersonCharacter.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TP_ThirdPerson/TP_ThirdPersonGameMode.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TP_ThirdPerson/TP_ThirdPersonGameMode.cpp.o"
+  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/NPC/ChooseNextWaypoint.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/NPC/ChooseNextWaypoint.cpp.o"
+  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/NPC/PatrolRoute.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/NPC/PatrolRoute.cpp.o"
+  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/Player/FirstPersonCharacter.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/Player/FirstPersonCharacter.cpp.o"
   "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TestingGrounds.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TestingGrounds.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TestingGroundsCharacter.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TestingGroundsCharacter.cpp.o"
   "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TestingGroundsGameMode.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TestingGroundsGameMode.cpp.o"
   "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TestingGroundsHUD.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TestingGroundsHUD.cpp.o"
-  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/TestingGroundsProjectile.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/TestingGroundsProjectile.cpp.o"
+  "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/Source/TestingGrounds/Weapons/BallProjectile.cpp" "/Users/zigkurat/Documents/Workspace/Unreal/Section_05/TestingGrounds/cmake-build-debug/CMakeFiles/FakeTarget.dir/Source/TestingGrounds/Weapons/BallProjectile.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -14703,10 +14700,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/Applications/UE_4.24/Engine/Plugins/VirtualProduction/Takes/Source/TakeRecorderSources/Private"
   "/Applications/UE_4.24/Engine/Plugins/VirtualProduction/Takes/Intermediate/Build/Mac/UE4Editor/Inc/TakeRecorderSources"
   "/Applications/UE_4.24/Engine/Plugins/VirtualProduction/Takes/Source/TakeRecorder/Private"
-  "../Source/TestingGrounds/Private"
   "../Intermediate/Build/Mac/UE4Editor/Inc/TestingGrounds"
   "../Source"
-  "../Source/TestingGrounds/Public"
   )
 
 # Targets to which this target links.
