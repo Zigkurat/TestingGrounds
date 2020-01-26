@@ -39,6 +39,7 @@ public:
 public:
 	virtual void Tick(float DeltaTime) override;
 	
+	UFUNCTION(BlueprintCallable, Category = Action)
 	void OnFire();
 
 protected:
