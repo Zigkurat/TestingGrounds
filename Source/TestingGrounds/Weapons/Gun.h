@@ -28,10 +28,16 @@ public:
 	class USoundBase *FireSound;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	class UAnimMontage *FireAnimation;
+	class UAnimMontage *FirstPersonFireAnimation;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	UAnimInstance *AnimInstance;
+	class UAnimMontage *ThirdPersonFireAnimation;
+
+	UPROPERTY()
+	UAnimInstance *FirstPersonAnimInstance;
+
+	UPROPERTY()
+	UAnimInstance *ThirdPersonAnimInstance;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	FVector GunOffset;

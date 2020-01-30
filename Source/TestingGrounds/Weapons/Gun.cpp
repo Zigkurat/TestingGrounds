@@ -55,8 +55,10 @@ void AGun::OnFire()
 		UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
 	}
 
-	if (ensure(FireAnimation) && ensure(AnimInstance))
-	{
-		AnimInstance->Montage_Play(FireAnimation, 1.f);
+	if (FirstPersonFireAnimation != nullptr && FirstPersonAnimInstance != nullptr) {
+		FirstPersonAnimInstance->Montage_Play(FirstPersonFireAnimation, 1.f);
+	}
+	if (ThirdPersonFireAnimation != nullptr && ThirdPersonAnimInstance != nullptr) {
+		ThirdPersonAnimInstance->Montage_Play(ThirdPersonFireAnimation, 1.f);
 	}
 }
