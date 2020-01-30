@@ -12,15 +12,17 @@ class TESTINGGROUNDS_API ATile : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
 	ATile();
 
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable, Category = Generation)
+	void PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn, int32 MaxSpawn);
+
+protected:
+	virtual void BeginPlay() override;
+
+private:
+	bool CastSphere(FVector Location, float Radius);
 };
