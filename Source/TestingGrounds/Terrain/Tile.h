@@ -18,11 +18,15 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = Generation)
-	void PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn, int32 MaxSpawn);
+	void PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn = 1, int32 MaxSpawn = 1, float MinScale = 1.f, float MaxScale = 1.f, float Radius = 500);
 
 protected:
 	virtual void BeginPlay() override;
 
 private:
-	bool CastSphere(FVector Location, float Radius);
+	bool CanSpawnAtLocation(FVector Location, float Radius);
+
+	bool FindEmptyLocation(float Radius, FVector &OutLocation);
+
+	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector SpawnPoint, float YawRotation, float Scale);
 };
