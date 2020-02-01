@@ -16,8 +16,6 @@ void AInfiniteTerrainGameMode::PopulateBoundsVolumePool() {
     while (NavMeshIterator) {
         AddToPool(*NavMeshIterator);
         ++NavMeshIterator;
-
-        UE_LOG(LogTemp, Warning, TEXT("Added nav mesh to pool"));
     }
 }
 

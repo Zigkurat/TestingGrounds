@@ -6,6 +6,31 @@
 #include "GameFramework/Actor.h"
 #include "Tile.generated.h"
 
+USTRUCT()
+struct FSpawnPosition {
+	GENERATED_USTRUCT_BODY();
+
+	FVector Location;
+	float YawRotation;
+	float Scale;
+};
+
+USTRUCT(BlueprintType)
+struct FSpawnData {
+	GENERATED_USTRUCT_BODY();
+
+	UPROPERTY(BlueprintReadWrite)
+	int32 MinCount = 1; 
+	UPROPERTY(BlueprintReadWrite)
+	int32 MaxCount = 1; 
+	UPROPERTY(BlueprintReadWrite)
+	float MinScale = 1.f;
+	UPROPERTY(BlueprintReadWrite)
+	float MaxScale = 1.f;
+	UPROPERTY(BlueprintReadWrite)
+	float Radius = 500;
+};
+
 UCLASS()
 class TESTINGGROUNDS_API ATile : public AActor
 {
@@ -33,7 +58,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = Generation)
-	void PlaceActors(TSubclassOf<AActor> ToSpawn, int32 MinSpawn = 1, int32 MaxSpawn = 1, float MinScale = 1.f, float MaxScale = 1.f, float Radius = 500);
+	void PlaceActors(TSubclassOf<AActor> ToSpawn, FSpawnData SpawnData);
+
+	UFUNCTION(BlueprintCallable, Category = Generation)
+	void PlaceAIPawns(TSubclassOf<APawn> ToSpawn, FSpawnData SpawnData);
 
 	UFUNCTION(BlueprintCallable, Category = Pooling)
 	void SetNavMeshPool(UActorPool *NavMeshPoolToSet);
@@ -44,9 +72,13 @@ protected:
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 
 private:
+	TArray<FSpawnPosition> RandomSpawnPositions(FSpawnData SpawnData);
+
 	bool CanSpawnAtLocation(FVector Location, float Radius);
 
 	bool FindEmptyLocation(float Radius, FVector &OutLocation);
 
-	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector SpawnPoint, float YawRotation, float Scale);
+	void PlaceActor(TSubclassOf<AActor> ToSpawn, FSpawnPosition SpawnPosition);
+
+	void PlaceAIPawn(TSubclassOf<APawn> ToSpawn, FSpawnPosition SpawnPosition);
 };
