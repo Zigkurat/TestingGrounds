@@ -55,8 +55,6 @@ private:
 	AActor *NavMesh;
 
 public:	
-	virtual void Tick(float DeltaTime) override;
-
 	UFUNCTION(BlueprintCallable, Category = Generation)
 	void PlaceActors(TSubclassOf<AActor> ToSpawn, FSpawnData SpawnData);
 
@@ -67,18 +65,17 @@ public:
 	void SetNavMeshPool(UActorPool *NavMeshPoolToSet);
 
 protected:
-	virtual void BeginPlay() override;
-
 	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 
 private:
-	TArray<FSpawnPosition> RandomSpawnPositions(FSpawnData SpawnData);
-
 	bool CanSpawnAtLocation(FVector Location, float Radius);
+
+	template<class T>
+	void PlaceActorsRandomly(TSubclassOf<T> ToSpawn, FSpawnData SpawnData);
 
 	bool FindEmptyLocation(float Radius, FVector &OutLocation);
 
 	void PlaceActor(TSubclassOf<AActor> ToSpawn, FSpawnPosition SpawnPosition);
 
-	void PlaceAIPawn(TSubclassOf<APawn> ToSpawn, FSpawnPosition SpawnPosition);
+	void PlaceActor(TSubclassOf<APawn> ToSpawn, FSpawnPosition SpawnPosition);
 };
